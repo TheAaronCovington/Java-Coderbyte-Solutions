@@ -9,7 +9,6 @@ import java.io.*;
 
 class Function {  
   String LongestWord(String sen) { 
-	  int count = 0;
 	  String largest = "";
 	  //gets rid of non alphanumeric characters and splits words separated by space into separate strings
 	  String[] alter = sen.replaceAll("[^a-zA-Z0-9 ]", "").split(" ");
