@@ -9,15 +9,19 @@ import java.io.*;
 
 class Function {  
   int FirstFactorial(int num) { 
+		int N = num;
+		for(int i = 1; i < N; i++){
+			num = num * i;
+		}
+		return num;
+	}
   
-    int count = num - 1;
-    while (count > 0) {
-    	num = num * count;
-      	count--;
+  //RECURSIVE SOLUTION
+   int FirstFactorial(int num) { 
+    if(num == 0){
+    	return 1;
     }
-       
-    return num;
-    
+    return num * FirstFactorial(num - 1);
   } 
   
   public static void main (String[] args) {  
