@@ -18,6 +18,17 @@ class Function {
 		
     return str;
     
+  }
+  
+  /**********ALTERNATE SOLUTION*********/
+  
+  String FirstReverse(String str) { 
+  
+    String myString = "";
+    for(int i = 0; i <  str.length(); i++){
+    	myString = str.charAt(i) + myString;	
+    }
+    return myString;
   } 
   
   public static void main (String[] args) {  
